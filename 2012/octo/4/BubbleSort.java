@@ -1,4 +1,5 @@
 
+/* import CommonUtils.*; */
 
 
 public class BubbleSort {
@@ -13,25 +14,15 @@ public class BubbleSort {
 	}
 
 	System.out.println("Before sort:");
-	print_array(ary);
+	CommonUtils.print_array(ary);
 
 	bubble_sort(ary);
 
 	System.out.println("After bubble sort:");
-	print_array(ary);
+	CommonUtils.print_array(ary);
     }
 
-    public static void print_array(int[] array) {
-	System.out.print('[');
-	for (int i = 0; i != array.length; ++i) {
-	    System.out.print(array[i]);
-	    if (i != array.length - 1)
-		System.out.print(", ");
-	}
-	System.out.println(']');
-    }
-
-    public static void bubble_sort(int[] array) {
+    static void bubble_sort(int[] array) {
 	for (int i = array.length - 1; i != 0; --i) {
 	    for (int j = 0; j != i; ++j) {
 		if (array[j] > array[j + 1]) {
