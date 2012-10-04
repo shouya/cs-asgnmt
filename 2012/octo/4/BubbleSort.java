@@ -9,9 +9,8 @@ public class BubbleSort {
 
 	int ary[] = new int[ARRAY_LENGTH];
 
-	for (int i = 0; i != ARRAY_LENGTH; ++i) {
+	for (int i = 0; i != ARRAY_LENGTH; ++i)
 	    ary[i] = (int)(Math.random() * ELEMENT_BOUND) + 1;
-	}
 
 	System.out.println("Before sort:");
 	CommonUtils.print_array(ary);
